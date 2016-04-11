@@ -95,6 +95,10 @@ Use `repeatCount` property.
 
 You can try to change the `radius`,  `backgroundColor`  or other properties with the demo app.
 
+- Example/PulsatorDemo.xcodeproj
+
+<iframe src="https://appetize.io/embed/45kwjngp1xud45eeqhxqy8qqew?device=iphone6s&scale=75&autoplay=false&orientation=portrait&deviceColor=black" width="312px" height="653px" frameborder="0" scrolling="no"></iframe>
+
 
 ##Objective-C version
 
