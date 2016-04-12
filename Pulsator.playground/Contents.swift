@@ -1,7 +1,6 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
 import XCPlayground
+import Pulsator
 
 let containerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 400.0, height: 400))
 containerView.backgroundColor = UIColor.whiteColor()

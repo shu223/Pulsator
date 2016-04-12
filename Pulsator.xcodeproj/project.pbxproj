@@ -31,6 +31,7 @@
 		8A77DC2C1CBC4B4E00087690 /* PulsatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatorTests.swift; sourceTree = "<group>"; };
 		8A77DC2E1CBC4B4E00087690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A77DC381CBC4BD000087690 /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
+		8A77DC6C1CBCB67D00087690 /* Pulsator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pulsator.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		8A77DC131CBC4B4E00087690 = {
 			isa = PBXGroup;
 			children = (
+				8A77DC6C1CBCB67D00087690 /* Pulsator.playground */,
 				8A77DC1F1CBC4B4E00087690 /* Pulsator */,
 				8A77DC2B1CBC4B4E00087690 /* PulsatorTests */,
 				8A77DC1E1CBC4B4E00087690 /* Products */,
