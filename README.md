@@ -16,9 +16,9 @@ Great For:
 
 Add into your Podfile.
 
-````
+```:Podfile
 pod "Pulsator"
-````
+```
 
 Then `$ pod install`
 
@@ -26,20 +26,18 @@ Then `$ pod install`
 
 Add into your Cartfile.
 
-```
+```:Cartfile
 github "shu223/Pulsator"
 ```
 
 Then `$ carthage update`
 
 
-###Manual
-
-Add Pulsator.swift into your project.
-
 ##How to use
 
-Just initiate and add to your view's layer, then call `start`!
+Just **3 lines**!
+
+Initiate and add to your view's layer, then call `start`!
 
 ```swift
 let pulsator = Pulsator()
@@ -102,7 +100,7 @@ You can try to change the `radius`,  `backgroundColor`  or other properties with
 
 ##Objective-C version
 
-https://github.com/shu223/PulsingHalo
+- https://github.com/shu223/PulsingHalo
 
 ##Author
 
