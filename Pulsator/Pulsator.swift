@@ -107,7 +107,7 @@ public class Pulsator: CAReplicatorLayer {
     override public init() {
         super.init()
         
-        setuppulse()
+        setupPulse()
         
         instanceDelay = 1
         repeatCount = MAXFLOAT
@@ -126,7 +126,7 @@ public class Pulsator: CAReplicatorLayer {
     
     // MARK: - Private Methods
     
-    private func setuppulse() {
+    private func setupPulse() {
         pulse.contentsScale = UIScreen.mainScreen().scale
         pulse.opacity = 0
         addSublayer(pulse)
@@ -180,7 +180,7 @@ public class Pulsator: CAReplicatorLayer {
     
     /// Start the animation.
     public func start() {
-        setuppulse()
+        setupPulse()
         setupAnimateionGroup()
         pulse.addAnimation(animationGroup, forKey: kPulsatorAnimationKey)
     }
@@ -203,13 +203,5 @@ public class Pulsator: CAReplicatorLayer {
         if autoRemove {
             removeFromSuperlayer()
         }
-    }
-}
-
-extension UIColor {
-    var components:(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
-        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-        getRed(&r, green: &g, blue: &b, alpha: &a)
-        return (r,g,b,a)
     }
 }
