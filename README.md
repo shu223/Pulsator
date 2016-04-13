@@ -1,6 +1,11 @@
 Pulsator
 ===========
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Badge w/ Version](http://cocoapod-badges.herokuapp.com/v/Pulsator/badge.png)](http://cocoadocs.org/docsets/Pulsator)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
+
 Pulse animation for iOS written with Swift.
 
 ![](demo.gif)
