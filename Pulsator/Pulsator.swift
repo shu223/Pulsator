@@ -24,7 +24,7 @@ public class Pulsator: CAReplicatorLayer {
             pulse.backgroundColor = backgroundColor
             let oldAlpha = alpha
             alpha = CGColorGetAlpha(backgroundColor)
-            if animationGroup != nil && alpha != oldAlpha {
+            if alpha != oldAlpha {
                 recreate()
             }
         }
@@ -83,9 +83,7 @@ public class Pulsator: CAReplicatorLayer {
     /// The value of this property should be ranging from @c 0 to @c 1 (exclusive).
     public var keyTimeForHalfOpacity: Float = 0.2 {
         didSet {
-            if animationGroup != nil {
-                recreate()
-            }
+            recreate()
         }
     }
     
@@ -179,6 +177,7 @@ public class Pulsator: CAReplicatorLayer {
     // MARK: - Internal Methods
     
     internal func recreate() {
+        guard animationGroup != nil else { return }        // Not need to be recreated.
         stop()
         let when = dispatch_time(DISPATCH_TIME_NOW, Int64(0.2 * double_t(NSEC_PER_SEC)))
         dispatch_after(when, dispatch_get_main_queue()) { () -> Void in
