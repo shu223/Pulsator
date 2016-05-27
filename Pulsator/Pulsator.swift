@@ -113,6 +113,11 @@ public class Pulsator: CAReplicatorLayer {
         repeatCount = MAXFLOAT
         backgroundColor = UIColor(
             red: 0, green: 0.455, blue: 0.756, alpha: 0.45).CGColor
+        
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: #selector(recreate),
+                                                         name: UIApplicationDidBecomeActiveNotification,
+                                                         object: nil)
     }
     
     override public init(layer: AnyObject) {
@@ -123,6 +128,9 @@ public class Pulsator: CAReplicatorLayer {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
     
     // MARK: - Private Methods
     
@@ -168,7 +176,9 @@ public class Pulsator: CAReplicatorLayer {
         instanceDelay = (animationDuration + pulseInterval) / Double(numPulse)
     }
     
-    private func recreate() {
+    // MARK: - Internal Methods
+    
+    internal func recreate() {
         stop()
         let when = dispatch_time(DISPATCH_TIME_NOW, Int64(0.2 * double_t(NSEC_PER_SEC)))
         dispatch_after(when, dispatch_get_main_queue()) { () -> Void in
