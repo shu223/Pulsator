@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A27937E1D0C808E007D3DE0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A27937D1D0C808E007D3DE0 /* MapViewController.swift */; };
 		8A2C9CD21CB9611800037146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C9CC81CB9611800037146 /* AppDelegate.swift */; };
 		8A2C9CD31CB9611800037146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C9CC91CB9611800037146 /* Assets.xcassets */; };
 		8A2C9CD81CB9611800037146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C9CD11CB9611800037146 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A27937D1D0C808E007D3DE0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = PulsatorDemo/MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		8A2C9CC81CB9611800037146 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PulsatorDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		8A2C9CC91CB9611800037146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PulsatorDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		8A2C9CCF1CB9611800037146 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PulsatorDemo/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -63,6 +65,7 @@
 				8A2C9CDC1CB9614500037146 /* Main.storyboard */,
 				8A2C9CC81CB9611800037146 /* AppDelegate.swift */,
 				8A2C9CD11CB9611800037146 /* ViewController.swift */,
+				8A27937D1D0C808E007D3DE0 /* MapViewController.swift */,
 			);
 			name = PulsatorDemo;
 			path = Pulsator;
@@ -151,6 +154,7 @@
 				8A77DC121CBC467000087690 /* Pulsator.swift in Sources */,
 				8A2C9CD81CB9611800037146 /* ViewController.swift in Sources */,
 				8A2C9CD21CB9611800037146 /* AppDelegate.swift in Sources */,
+				8A27937E1D0C808E007D3DE0 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

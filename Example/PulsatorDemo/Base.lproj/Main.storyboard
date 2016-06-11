@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -226,18 +226,27 @@
                                         </constraints>
                                     </imageView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEz-GH-jqL">
-                                        <rect key="frame" x="535" y="28" width="51" height="31"/>
+                                        <rect key="frame" x="16" y="28" width="51" height="31"/>
                                         <connections>
                                             <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="u3O-QV-fWR"/>
                                         </connections>
                                     </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTL-7b-CjK">
+                                        <rect key="frame" x="551" y="28" width="33" height="30"/>
+                                        <state key="normal" title="MAP"/>
+                                        <connections>
+                                            <segue destination="BYb-6F-9wz" kind="presentation" modalTransitionStyle="flipHorizontal" id="9mf-Gx-SHm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="39F-Wg-tNQ" firstAttribute="centerY" secondItem="zbM-rN-3V8" secondAttribute="centerY" id="Bbf-F4-rPr"/>
                                     <constraint firstItem="39F-Wg-tNQ" firstAttribute="centerX" secondItem="zbM-rN-3V8" secondAttribute="centerX" id="N5D-BR-nAc"/>
                                     <constraint firstItem="cEz-GH-jqL" firstAttribute="top" secondItem="zbM-rN-3V8" secondAttribute="top" constant="28" id="T9Y-98-GhZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="cEz-GH-jqL" secondAttribute="trailing" constant="16" id="b7v-Si-Erv"/>
+                                    <constraint firstAttribute="trailing" secondItem="eTL-7b-CjK" secondAttribute="trailing" constant="16" id="bLb-Ye-crx"/>
+                                    <constraint firstItem="cEz-GH-jqL" firstAttribute="leading" secondItem="zbM-rN-3V8" secondAttribute="leading" constant="16" id="fKK-uZ-MSq"/>
+                                    <constraint firstItem="eTL-7b-CjK" firstAttribute="top" secondItem="zbM-rN-3V8" secondAttribute="top" constant="28" id="hi0-yc-gpZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -273,6 +282,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="292" y="355"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="cxw-q2-uH6">
+            <objects>
+                <viewController id="BYb-6F-9wz" customClass="MapViewController" customModule="PulsatorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U9R-FC-MsE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ko4-WT-CHI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MDV-d0-lsp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mDt-e4-vCx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYb-6F-9wz" id="CvM-rE-QMr"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km6-Xq-pLG">
+                                <rect key="frame" x="16" y="28" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="BYb-6F-9wz" eventType="touchUpInside" id="Uxd-Cy-PMC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Km6-Xq-pLG" firstAttribute="leading" secondItem="MDV-d0-lsp" secondAttribute="leading" constant="16" id="4If-cH-D6f"/>
+                            <constraint firstAttribute="bottom" secondItem="mDt-e4-vCx" secondAttribute="bottom" id="OxA-R4-qj3"/>
+                            <constraint firstItem="Km6-Xq-pLG" firstAttribute="top" secondItem="MDV-d0-lsp" secondAttribute="top" constant="28" id="Sja-Jx-oKN"/>
+                            <constraint firstItem="mDt-e4-vCx" firstAttribute="leading" secondItem="MDV-d0-lsp" secondAttribute="leading" id="YND-C5-ohV"/>
+                            <constraint firstItem="mDt-e4-vCx" firstAttribute="top" secondItem="MDV-d0-lsp" secondAttribute="top" id="dzM-fS-gg8"/>
+                            <constraint firstAttribute="trailing" secondItem="mDt-e4-vCx" secondAttribute="trailing" id="knN-LT-Hhe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="mDt-e4-vCx" id="qIr-rT-oQG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pma-LL-lSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="355"/>
         </scene>
     </scenes>
     <resources>
