@@ -77,7 +77,7 @@ class AnnotationView: MKAnnotationView {
         let pulsator = Pulsator()
         pulsator.position = center
         pulsator.numPulse = 5
-        pulsator.radius = 20
+        pulsator.radius = 40
         pulsator.animationDuration = 3
         pulsator.backgroundColor = UIColor(red: 0, green: 0.455, blue: 0.756, alpha: 1).CGColor
         layer.addSublayer(pulsator)

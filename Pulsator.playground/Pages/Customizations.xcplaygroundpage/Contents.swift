@@ -1,8 +1,10 @@
+//: [Previous](@previous)
+
 import UIKit
 import XCPlayground
 import Pulsator
 
-let containerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 400.0, height: 400))
+let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
 containerView.backgroundColor = UIColor.whiteColor()
 let sourceView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: 50.0, height: 50))
 sourceView.contentMode = .ScaleAspectFit
@@ -26,4 +28,4 @@ pulsator.start()
 
 XCPlaygroundPage.currentPage.liveView = containerView
 
-
+//: [Next](@next)
