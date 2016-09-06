@@ -104,9 +104,20 @@ You can try to change the `radius`,  `backgroundColor`  or other properties with
 <iframe src="https://appetize.io/embed/45kwjngp1xud45eeqhxqy8qqew?device=iphone6s&scale=75&autoplay=false&orientation=portrait&deviceColor=black" width="312px" height="653px" frameborder="0" scrolling="no"></iframe>
 
 
+
+
 ##Objective-C version
 
+There is an ObjC version, but it's not maintained now.
+
 - https://github.com/shu223/PulsingHalo
+
+You can use Pulsator also with Objective-C.
+
+```
+#import "Pulsator-Swift.h"
+```
+
 
 ##Author
 
