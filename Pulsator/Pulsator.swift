@@ -98,7 +98,11 @@ public class Pulsator: CAReplicatorLayer {
             }
         }
     }
-
+    
+    /// The value of this property showed a pulse is started
+    public var isPulsating: Bool {
+        return pulse.animationKeys()?.count > 0
+    }
     
     // MARK: - Initializer
 
