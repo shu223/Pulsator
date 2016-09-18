@@ -9,7 +9,7 @@
 import UIKit
 
 let kMaxRadius: CGFloat = 200
-let kMaxDuration: NSTimeInterval = 10
+let kMaxDuration: TimeInterval = 10
 
 class ViewController: UIViewController {
 
@@ -52,19 +52,19 @@ class ViewController: UIViewController {
 
     private func setupInitialValues() {
         countSlider.value = 5
-        countChanged(nil)
+        countChanged(sender: nil)
         
         radiusSlider.value = 0.7
-        radiusChanged(nil)
+        radiusChanged(sender: nil)
         
         durationSlider.value = 0.5
-        durationChanged(nil)
+        durationChanged(sender: nil)
         
         rSlider.value = 0
         gSlider.value = 0.455
         bSlider.value = 0.756
         aSlider.value = 1
-        colorChanged(nil)
+        colorChanged(sender: nil)
     }
 
     // MARK: - Actions
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
             red: CGFloat(rSlider.value),
             green: CGFloat(gSlider.value),
             blue: CGFloat(bSlider.value),
-            alpha: CGFloat(aSlider.value)).CGColor
+            alpha: CGFloat(aSlider.value)).cgColor
         rLabel.text = String(format: "%.2f", rSlider.value)
         gLabel.text = String(format: "%.2f", gSlider.value)
         bLabel.text = String(format: "%.2f", bSlider.value)
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchChanged(sender: UISwitch) {
-        if sender.on {
+        if sender.isOn {
             pulsator.start()
         }
         else {

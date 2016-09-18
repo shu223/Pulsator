@@ -43,9 +43,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     // =========================================================================
     // MARK: - MKMapViewDelegate
     
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        guard !annotation.isKindOfClass(MKUserLocation) else { return nil }
-
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard !annotation.isKind(of: MKUserLocation.classForCoder()) else { return nil }
+        
         return AnnotationView(annotation: annotation, reuseIdentifier: "PulsatorDemoAnnotation")
     }
 
@@ -53,15 +53,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     // MARK: - Actions
     
     @IBAction func backBtnTapped(sender: UIButton) {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 
 class AnnotationView: MKAnnotationView {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
     
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
@@ -79,7 +75,7 @@ class AnnotationView: MKAnnotationView {
         pulsator.numPulse = 5
         pulsator.radius = 40
         pulsator.animationDuration = 3
-        pulsator.backgroundColor = UIColor(red: 0, green: 0.455, blue: 0.756, alpha: 1).CGColor
+        pulsator.backgroundColor = UIColor(red: 0, green: 0.455, blue: 0.756, alpha: 1).cgColor
         layer.addSublayer(pulsator)
         pulsator.start()
     }
