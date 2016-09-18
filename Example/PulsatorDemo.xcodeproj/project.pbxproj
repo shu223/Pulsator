@@ -112,6 +112,7 @@
 				TargetAttributes = {
 					8A47DCA61CB9226400B6CD47 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9Z86A4AWDE;
 					};
 				};
 			};
@@ -269,11 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Z86A4AWDE;
 				INFOPLIST_FILE = PulsatorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = PulsatorDemo;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -281,11 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Z86A4AWDE;
 				INFOPLIST_FILE = PulsatorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = PulsatorDemo;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
