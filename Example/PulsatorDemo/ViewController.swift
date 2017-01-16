@@ -45,8 +45,7 @@ class ViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        sourceView.layer.layoutIfNeeded()
+        view.layer.layoutIfNeeded()
         pulsator.position = sourceView.layer.position
     }
 
