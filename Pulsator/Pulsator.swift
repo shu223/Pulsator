@@ -189,6 +189,15 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         instanceDelay = (animationDuration + pulseInterval) / Double(numPulse)
     }
     
+    fileprivate func recreate() {
+        guard animationGroup != nil else { return }        // Not need to be recreated.
+        stop()
+        let when = DispatchTime.now() + Double(Int64(0.2 * double_t(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: when) { () -> Void in
+            self.start()
+        }
+    }
+    
     // MARK: - Internal Methods
     
     internal func save() {
@@ -207,15 +216,6 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         // if the animationGroup is not nil, it means the animation was not stopped
         if let animationGroup = animationGroup, !isAnimating {
             pulse.add(animationGroup, forKey: kPulsatorAnimationKey)
-        }
-    }
-    
-    internal func recreate() {
-        guard animationGroup != nil else { return }        // Not need to be recreated.
-        stop()
-        let when = DispatchTime.now() + Double(Int64(0.2 * double_t(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
-        DispatchQueue.main.asyncAfter(deadline: when) { () -> Void in
-            self.start()
         }
     }
     
