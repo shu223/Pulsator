@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -286,6 +286,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="292" y="355"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="ot9-IS-h4i">
+            <objects>
+                <viewController id="PGw-5Y-g7G" customClass="TestViewController" customModule="PulsatorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sra-lD-v0o"/>
+                        <viewControllerLayoutGuide type="bottom" id="tpu-MZ-qwT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkS-lc-C4v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buj-7a-xMg">
+                                <rect key="frame" x="115" y="258" width="144" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="kyw-K4-0a0"/>
+                                    <constraint firstAttribute="height" constant="150" id="z4W-Rn-SGm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1Q-Ph-kma">
+                                <rect key="frame" x="64" y="469" width="32" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="PGw-5Y-g7G" eventType="touchUpInside" id="zxB-Ru-9xe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBV-Tg-v17">
+                                <rect key="frame" x="269" y="469" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="PGw-5Y-g7G" eventType="touchUpInside" id="cCk-eX-9N8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Buj-7a-xMg" firstAttribute="centerX" secondItem="hkS-lc-C4v" secondAttribute="centerX" id="IHr-a6-g2A"/>
+                            <constraint firstItem="Buj-7a-xMg" firstAttribute="centerY" secondItem="hkS-lc-C4v" secondAttribute="centerY" id="yab-eq-qXc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testButton" destination="Buj-7a-xMg" id="grh-qw-4iw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Gu-8L-ybI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.79999999999995" y="1058.3208395802101"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="cxw-q2-uH6">
