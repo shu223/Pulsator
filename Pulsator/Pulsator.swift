@@ -154,7 +154,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         updatePulse()
     }
     
-    fileprivate func setupAnimateionGroup() {
+    fileprivate func setupAnimationGroup() {
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale.xy")
         scaleAnimation.fromValue = fromValueForRadius
         scaleAnimation.toValue = 1.0
@@ -224,7 +224,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     /// Start the animation.
     open func start() {
         setupPulse()
-        setupAnimateionGroup()
+        setupAnimationGroup()
         pulse.add(animationGroup, forKey: kPulsatorAnimationKey)
     }
     
