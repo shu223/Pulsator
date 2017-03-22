@@ -33,14 +33,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		
+        
         sourceView.layer.superlayer?.insertSublayer(pulsator, below: sourceView.layer)
         setupInitialValues()
     }
-	
-	override func viewDidAppear(_ animated: Bool) {
-		pulsator.start()
-	}
+    
+    override func viewDidAppear(_ animated: Bool) {
+        pulsator.start()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -52,7 +52,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         }
     }
     
-    ///	The radius of pulse.
+    ///      The radius of pulse.
     open var radius: CGFloat = 60 {
         didSet {
             updatePulse()
@@ -105,10 +105,10 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         guard let keys = pulse.animationKeys() else {return false}
         return keys.count > 0
     }
-	
-	/// The layer will automatically be centered in it's superlayer.
-	/// Set it to false and use the 'position' property to customize the position.
-	open var autoCenter = true
+      
+      /// The layer will automatically be centered in it's superlayer.
+      /// Set it to false and use the 'position' property to customize the position.
+      open var autoCenter = true
     
     /// private properties for resuming
     fileprivate weak var prevSuperlayer: CALayer?
@@ -230,13 +230,13 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         setupPulse()
         setupAnimationGroup()
         pulse.add(animationGroup, forKey: kPulsatorAnimationKey)
-		
-		if autoCenter {
-			if let superLayerBounds = superlayer?.bounds {
-				position = CGPoint(x: superLayerBounds.width / 2, y: superLayerBounds.height / 2)
-			}
-		}
-		
+            
+            if autoCenter {
+                  if let superLayerBounds = superlayer?.bounds {
+                        position = CGPoint(x: superLayerBounds.width / 2, y: superLayerBounds.height / 2)
+                  }
+            }
+            
     }
     
     /// Stop the animation.
