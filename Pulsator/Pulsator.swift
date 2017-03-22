@@ -231,11 +231,11 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         setupAnimationGroup()
         pulse.add(animationGroup, forKey: kPulsatorAnimationKey)
             
-            if autoCenter {
-                  if let superLayerBounds = superlayer?.bounds {
-                        position = CGPoint(x: superLayerBounds.width / 2, y: superLayerBounds.height / 2)
-                  }
+        if autoCenter {
+            if let superLayerBounds = superlayer?.bounds {
+                position = CGPoint(x: superLayerBounds.width / 2, y: superLayerBounds.height / 2)
             }
+        }
             
     }
     
