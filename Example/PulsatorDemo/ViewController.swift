@@ -49,7 +49,6 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         view.layer.layoutIfNeeded()
-        //pulsator.position = sourceView.layer.position
     }
 
     private func setupInitialValues() {
