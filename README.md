@@ -16,9 +16,9 @@ Great For:
 - **Pulses of Bluetooth, BTLE, beacons (iBeacon)**, etc.
 - Map Annotations
 
-##Installation
+## Installation
 
-###CocoaPods
+### CocoaPods
 
 Add into your Podfile.
 
@@ -28,7 +28,7 @@ pod "Pulsator"
 
 Then `$ pod install`
 
-###Carthage
+### Carthage
 
 Add into your Cartfile.
 
@@ -39,7 +39,7 @@ github "shu223/Pulsator"
 Then `$ carthage update`
 
 
-##How to use
+## How to use
 
 Just **3 lines**!
 
@@ -52,9 +52,9 @@ pulsator.start()
 ```
 
 
-##Customizations
+## Customizations
 
-###Number of Pulses
+### Number of Pulses
 
 Use `numPulse` property.
 
@@ -62,7 +62,7 @@ Use `numPulse` property.
 pulsator.numPulse = 3
 ```
 
-###Radius
+### Radius
 
 Use `radius` property.
 
@@ -70,7 +70,7 @@ Use `radius` property.
 pulsator.radius = 240.0
 ```
 
-###Color
+### Color
 
 Just set the `backgroundColor` property.
 
@@ -78,24 +78,24 @@ Just set the `backgroundColor` property.
 pulsator.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1).CGColor
 ```
 
-###Animation Duration
+### Animation Duration
 
 Use following properties
 
 - `animationDuration` : duration for each pulse
 - `pulseInterval` : interval between pulses
 
-###Easing
+### Easing
 
 You can set the `timingFunction` property.
 
 
-###Repeat
+### Repeat
 
 Use `repeatCount` property.
 
 
-##Demo
+## Demo
 
 You can try to change the `radius`,  `backgroundColor`  or other properties with the demo app.
 
@@ -106,7 +106,7 @@ You can try to change the `radius`,  `backgroundColor`  or other properties with
 
 
 
-##Objective-C version
+## Objective-C version
 
 There is an ObjC version, but it's not maintained now.
 
@@ -119,7 +119,7 @@ You can use Pulsator also with Objective-C.
 ```
 
 
-##Author
+## Author
 
 **Shuichi Tsutsumi**
 
