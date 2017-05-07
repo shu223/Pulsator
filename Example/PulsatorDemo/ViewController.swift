@@ -36,6 +36,9 @@ class ViewController: UIViewController {
         
         sourceView.layer.superlayer?.insertSublayer(pulsator, below: sourceView.layer)
         setupInitialValues()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         pulsator.start()
     }
 
@@ -46,7 +49,6 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         view.layer.layoutIfNeeded()
-        pulsator.position = sourceView.layer.position
     }
 
     private func setupInitialValues() {
