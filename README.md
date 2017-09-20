@@ -75,7 +75,7 @@ pulsator.radius = 240.0
 Just set the `backgroundColor` property.
 
 ```swift
-pulsator.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1).CGColor
+pulsator.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1).cgColor
 ```
 
 ### Animation Duration
