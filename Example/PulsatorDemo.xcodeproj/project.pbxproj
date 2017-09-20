@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A27937E1D0C808E007D3DE0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A27937D1D0C808E007D3DE0 /* MapViewController.swift */; };
-		8A2C9CD21CB9611800037146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C9CC81CB9611800037146 /* AppDelegate.swift */; };
-		8A2C9CD31CB9611800037146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C9CC91CB9611800037146 /* Assets.xcassets */; };
-		8A2C9CD81CB9611800037146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C9CD11CB9611800037146 /* ViewController.swift */; };
-		8A2C9CDE1CB9614500037146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C9CDA1CB9614500037146 /* LaunchScreen.storyboard */; };
-		8A2C9CDF1CB9614500037146 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A2C9CDC1CB9614500037146 /* Main.storyboard */; };
 		8A77DC121CBC467000087690 /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77DC111CBC467000087690 /* Pulsator.swift */; };
+		8AD3F2F51F729BDB0036CC93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3F2EC1F729BDB0036CC93 /* AppDelegate.swift */; };
+		8AD3F2F61F729BDB0036CC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD3F2ED1F729BDB0036CC93 /* Assets.xcassets */; };
+		8AD3F2F71F729BDB0036CC93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD3F2EE1F729BDB0036CC93 /* LaunchScreen.storyboard */; };
+		8AD3F2F81F729BDB0036CC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD3F2F01F729BDB0036CC93 /* Main.storyboard */; };
+		8AD3F2FA1F729BDB0036CC93 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3F2F31F729BDB0036CC93 /* MapViewController.swift */; };
+		8AD3F2FB1F729BDB0036CC93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3F2F41F729BDB0036CC93 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A27937D1D0C808E007D3DE0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = PulsatorDemo/MapViewController.swift; sourceTree = SOURCE_ROOT; };
-		8A2C9CC81CB9611800037146 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PulsatorDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		8A2C9CC91CB9611800037146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PulsatorDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		8A2C9CCF1CB9611800037146 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PulsatorDemo/Info.plist; sourceTree = SOURCE_ROOT; };
-		8A2C9CD11CB9611800037146 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = PulsatorDemo/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		8A2C9CDB1CB9614500037146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A2C9CDD1CB9614500037146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		8A47DCA71CB9226400B6CD47 /* PulsatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulsatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A77DC111CBC467000087690 /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
+		8AD3F2EC1F729BDB0036CC93 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AD3F2ED1F729BDB0036CC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AD3F2EF1F729BDB0036CC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AD3F2F11F729BDB0036CC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AD3F2F21F729BDB0036CC93 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD3F2F31F729BDB0036CC93 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8AD3F2F41F729BDB0036CC93 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				8A77DC101CBC467000087690 /* Pulsator */,
-				8A47DCA91CB9226400B6CD47 /* PulsatorDemo */,
+				8AD3F2EB1F729BDB0036CC93 /* PulsatorDemo */,
 				8A47DCA81CB9226400B6CD47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,21 +56,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A47DCA91CB9226400B6CD47 /* PulsatorDemo */ = {
-			isa = PBXGroup;
-			children = (
-				8A2C9CCF1CB9611800037146 /* Info.plist */,
-				8A2C9CC91CB9611800037146 /* Assets.xcassets */,
-				8A2C9CDA1CB9614500037146 /* LaunchScreen.storyboard */,
-				8A2C9CDC1CB9614500037146 /* Main.storyboard */,
-				8A2C9CC81CB9611800037146 /* AppDelegate.swift */,
-				8A2C9CD11CB9611800037146 /* ViewController.swift */,
-				8A27937D1D0C808E007D3DE0 /* MapViewController.swift */,
-			);
-			name = PulsatorDemo;
-			path = Pulsator;
-			sourceTree = "<group>";
-		};
 		8A77DC101CBC467000087690 /* Pulsator */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +63,20 @@
 			);
 			name = Pulsator;
 			path = ../Pulsator;
+			sourceTree = "<group>";
+		};
+		8AD3F2EB1F729BDB0036CC93 /* PulsatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8AD3F2F21F729BDB0036CC93 /* Info.plist */,
+				8AD3F2ED1F729BDB0036CC93 /* Assets.xcassets */,
+				8AD3F2EE1F729BDB0036CC93 /* LaunchScreen.storyboard */,
+				8AD3F2F01F729BDB0036CC93 /* Main.storyboard */,
+				8AD3F2EC1F729BDB0036CC93 /* AppDelegate.swift */,
+				8AD3F2F41F729BDB0036CC93 /* ViewController.swift */,
+				8AD3F2F31F729BDB0036CC93 /* MapViewController.swift */,
+			);
+			path = PulsatorDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,12 +106,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Shuichi Tsutsumi";
 				TargetAttributes = {
 					8A47DCA61CB9226400B6CD47 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 9Z86A4AWDE;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -139,9 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2C9CDE1CB9614500037146 /* LaunchScreen.storyboard in Resources */,
-				8A2C9CD31CB9611800037146 /* Assets.xcassets in Resources */,
-				8A2C9CDF1CB9614500037146 /* Main.storyboard in Resources */,
+				8AD3F2F61F729BDB0036CC93 /* Assets.xcassets in Resources */,
+				8AD3F2F81F729BDB0036CC93 /* Main.storyboard in Resources */,
+				8AD3F2F71F729BDB0036CC93 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,32 +153,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A77DC121CBC467000087690 /* Pulsator.swift in Sources */,
-				8A2C9CD81CB9611800037146 /* ViewController.swift in Sources */,
-				8A2C9CD21CB9611800037146 /* AppDelegate.swift in Sources */,
-				8A27937E1D0C808E007D3DE0 /* MapViewController.swift in Sources */,
+				8AD3F2FA1F729BDB0036CC93 /* MapViewController.swift in Sources */,
+				8AD3F2FB1F729BDB0036CC93 /* ViewController.swift in Sources */,
+				8AD3F2F51F729BDB0036CC93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8A2C9CDA1CB9614500037146 /* LaunchScreen.storyboard */ = {
+		8AD3F2EE1F729BDB0036CC93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A2C9CDB1CB9614500037146 /* Base */,
+				8AD3F2EF1F729BDB0036CC93 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = PulsatorDemo/Base.lproj;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		8A2C9CDC1CB9614500037146 /* Main.storyboard */ = {
+		8AD3F2F01F729BDB0036CC93 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A2C9CDD1CB9614500037146 /* Base */,
+				8AD3F2F11F729BDB0036CC93 /* Base */,
 			);
 			name = Main.storyboard;
-			path = PulsatorDemo/Base.lproj;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
@@ -192,14 +190,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -239,14 +243,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -281,7 +291,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = PulsatorDemo;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -295,7 +306,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = PulsatorDemo;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -200,12 +200,12 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     
     // MARK: - Internal Methods
     
-    internal func save() {
+    @objc internal func save() {
         prevSuperlayer = superlayer
         prevLayerIndex = prevSuperlayer?.sublayers?.index(where: {$0 === self})
     }
 
-    internal func resume() {
+    @objc internal func resume() {
         if let prevSuperlayer = prevSuperlayer, let prevLayerIndex = prevLayerIndex {
             prevSuperlayer.insertSublayer(self, at: UInt32(prevLayerIndex))
         }
