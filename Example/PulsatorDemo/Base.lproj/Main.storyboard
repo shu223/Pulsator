@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -91,37 +96,37 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwu-Vl-a1e">
-                                        <rect key="frame" x="251.5" y="68" width="27.5" height="17"/>
+                                        <rect key="frame" x="252.5" y="68" width="26.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2f-RF-M2k">
-                                        <rect key="frame" x="251.5" y="109" width="27.5" height="17"/>
+                                        <rect key="frame" x="252.5" y="109" width="26.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx8-BK-xS1">
-                                        <rect key="frame" x="251.5" y="150" width="27.5" height="17"/>
+                                        <rect key="frame" x="252.5" y="150" width="26.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzc-Io-25h">
-                                        <rect key="frame" x="251.5" y="191" width="27.5" height="17"/>
+                                        <rect key="frame" x="252.5" y="191" width="26.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zso-tb-RI0">
-                                        <rect key="frame" x="251.5" y="232" width="27.5" height="17"/>
+                                        <rect key="frame" x="252.5" y="232" width="26.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mu-aB-9Jj">
-                                        <rect key="frame" x="251.5" y="273" width="27.5" height="17"/>
+                                        <rect key="frame" x="252.5" y="273" width="26.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -151,7 +156,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0M-E9-CkI">
-                                        <rect key="frame" x="251.5" y="27" width="27.5" height="17"/>
+                                        <rect key="frame" x="252.5" y="27" width="26.5" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -174,39 +179,52 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="F7p-ef-OCO" firstAttribute="leading" secondItem="rrO-M5-Ok2" secondAttribute="leading" constant="112.5" id="0fa-hs-3Pg"/>
                                     <constraint firstItem="mYq-4i-YJu" firstAttribute="centerY" secondItem="zWf-i9-O3l" secondAttribute="centerY" id="1RR-bl-fGP"/>
-                                    <constraint firstItem="c2f-RF-M2k" firstAttribute="leading" secondItem="um5-XN-VwS" secondAttribute="trailing" constant="7" id="1rb-Ak-BLr"/>
-                                    <constraint firstItem="H0M-E9-CkI" firstAttribute="leading" secondItem="u2B-Rp-U4c" secondAttribute="trailing" constant="7" id="2ts-KD-73T"/>
+                                    <constraint firstItem="c2f-RF-M2k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="um5-XN-VwS" secondAttribute="trailing" symbolic="YES" id="1rb-Ak-BLr"/>
+                                    <constraint firstItem="H0M-E9-CkI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u2B-Rp-U4c" secondAttribute="trailing" symbolic="YES" id="2ts-KD-73T"/>
                                     <constraint firstItem="c2f-RF-M2k" firstAttribute="centerY" secondItem="um5-XN-VwS" secondAttribute="centerY" id="3x8-yW-VYO"/>
                                     <constraint firstItem="mwu-Vl-a1e" firstAttribute="centerY" secondItem="zWf-i9-O3l" secondAttribute="centerY" id="4f1-b5-TaF"/>
+                                    <constraint firstItem="AQB-M0-EHO" firstAttribute="leading" secondItem="rrO-M5-Ok2" secondAttribute="leading" constant="111" id="8dA-IG-gQB"/>
+                                    <constraint firstAttribute="trailing" secondItem="vzc-Io-25h" secondAttribute="trailing" constant="96" id="95K-AL-k1A"/>
                                     <constraint firstItem="um5-XN-VwS" firstAttribute="top" secondItem="zWf-i9-O3l" secondAttribute="bottom" constant="11" id="CGw-c2-3QZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nx8-BK-xS1" secondAttribute="trailing" constant="96" id="Fbe-JJ-OtK"/>
+                                    <constraint firstItem="z1q-oQ-W8R" firstAttribute="leading" secondItem="rrO-M5-Ok2" secondAttribute="leading" constant="112" id="HZx-OC-Zg7"/>
                                     <constraint firstItem="z1q-oQ-W8R" firstAttribute="centerY" secondItem="Wbk-q8-ENn" secondAttribute="centerY" id="Hi0-S8-s8g"/>
-                                    <constraint firstItem="u4T-eY-3aB" firstAttribute="leading" secondItem="AQB-M0-EHO" secondAttribute="trailing" constant="9" id="IGq-qG-vmn"/>
+                                    <constraint firstItem="u4T-eY-3aB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AQB-M0-EHO" secondAttribute="trailing" symbolic="YES" id="IGq-qG-vmn"/>
                                     <constraint firstItem="H0M-E9-CkI" firstAttribute="centerY" secondItem="u2B-Rp-U4c" secondAttribute="centerY" id="J2A-5R-3Ox"/>
                                     <constraint firstItem="vzc-Io-25h" firstAttribute="centerY" secondItem="u4T-eY-3aB" secondAttribute="centerY" id="LoG-Aa-Wtm"/>
                                     <constraint firstItem="8Pf-bV-iq9" firstAttribute="centerX" secondItem="rrO-M5-Ok2" secondAttribute="centerX" id="MJ7-vL-eZ6"/>
-                                    <constraint firstItem="Jlq-Ah-lmx" firstAttribute="leading" secondItem="F7p-ef-OCO" secondAttribute="trailing" constant="9" id="Max-v5-eXj"/>
+                                    <constraint firstItem="Jlq-Ah-lmx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F7p-ef-OCO" secondAttribute="trailing" symbolic="YES" id="Max-v5-eXj"/>
                                     <constraint firstItem="8Pf-bV-iq9" firstAttribute="top" secondItem="u4T-eY-3aB" secondAttribute="bottom" constant="11" id="Ml7-wm-WUN"/>
                                     <constraint firstItem="Wbk-q8-ENn" firstAttribute="centerX" secondItem="rrO-M5-Ok2" secondAttribute="centerX" id="NAE-9m-jE2"/>
-                                    <constraint firstItem="mwu-Vl-a1e" firstAttribute="leading" secondItem="zWf-i9-O3l" secondAttribute="trailing" constant="7" id="QcO-ei-hvH"/>
-                                    <constraint firstItem="Zso-tb-RI0" firstAttribute="leading" secondItem="8Pf-bV-iq9" secondAttribute="trailing" constant="7" id="Rk2-un-ilm"/>
+                                    <constraint firstItem="aHc-FU-qOi" firstAttribute="leading" secondItem="rrO-M5-Ok2" secondAttribute="leading" constant="70.5" id="P9u-em-1IW"/>
+                                    <constraint firstItem="mwu-Vl-a1e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zWf-i9-O3l" secondAttribute="trailing" symbolic="YES" id="QcO-ei-hvH"/>
+                                    <constraint firstAttribute="trailing" secondItem="c2f-RF-M2k" secondAttribute="trailing" constant="96" id="Qoh-Sw-551"/>
+                                    <constraint firstItem="Zso-tb-RI0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Pf-bV-iq9" secondAttribute="trailing" symbolic="YES" id="Rk2-un-ilm"/>
                                     <constraint firstItem="u4T-eY-3aB" firstAttribute="centerX" secondItem="rrO-M5-Ok2" secondAttribute="centerX" id="RmW-FA-2vo"/>
-                                    <constraint firstItem="8Pf-bV-iq9" firstAttribute="leading" secondItem="8Ag-FM-zeU" secondAttribute="trailing" constant="9" id="SsV-Di-a9c"/>
+                                    <constraint firstItem="8Pf-bV-iq9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Ag-FM-zeU" secondAttribute="trailing" symbolic="YES" id="SsV-Di-a9c"/>
                                     <constraint firstAttribute="bottom" secondItem="Jlq-Ah-lmx" secondAttribute="bottom" constant="20" id="WBV-co-MFo"/>
-                                    <constraint firstItem="zWf-i9-O3l" firstAttribute="leading" secondItem="mYq-4i-YJu" secondAttribute="trailing" constant="9" id="X7x-Y4-BZn"/>
+                                    <constraint firstItem="zWf-i9-O3l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mYq-4i-YJu" secondAttribute="trailing" symbolic="YES" id="X7x-Y4-BZn"/>
                                     <constraint firstItem="zWf-i9-O3l" firstAttribute="centerX" secondItem="rrO-M5-Ok2" secondAttribute="centerX" id="XF0-w1-hKY"/>
-                                    <constraint firstItem="Wbk-q8-ENn" firstAttribute="leading" secondItem="z1q-oQ-W8R" secondAttribute="trailing" constant="9" id="XIh-JG-9G0"/>
+                                    <constraint firstItem="Wbk-q8-ENn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="z1q-oQ-W8R" secondAttribute="trailing" symbolic="YES" id="XIh-JG-9G0"/>
                                     <constraint firstItem="F7p-ef-OCO" firstAttribute="centerY" secondItem="Jlq-Ah-lmx" secondAttribute="centerY" id="Y0c-9W-ql6"/>
                                     <constraint firstItem="Nx8-BK-xS1" firstAttribute="centerY" secondItem="Wbk-q8-ENn" secondAttribute="centerY" id="YBL-xx-bll"/>
                                     <constraint firstItem="5Mu-aB-9Jj" firstAttribute="centerY" secondItem="Jlq-Ah-lmx" secondAttribute="centerY" id="auc-fV-7GP"/>
                                     <constraint firstItem="8Ag-FM-zeU" firstAttribute="centerY" secondItem="8Pf-bV-iq9" secondAttribute="centerY" id="b5q-re-LOQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="H0M-E9-CkI" secondAttribute="trailing" constant="96" id="cLM-mv-g4w"/>
                                     <constraint firstItem="Qgr-mp-iI5" firstAttribute="centerY" secondItem="u2B-Rp-U4c" secondAttribute="centerY" id="ccE-UH-7Px"/>
                                     <constraint firstItem="u2B-Rp-U4c" firstAttribute="centerX" secondItem="rrO-M5-Ok2" secondAttribute="centerX" id="faX-rV-7zg"/>
-                                    <constraint firstItem="Nx8-BK-xS1" firstAttribute="leading" secondItem="Wbk-q8-ENn" secondAttribute="trailing" constant="7" id="kGi-rh-Pez"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Mu-aB-9Jj" secondAttribute="trailing" constant="96" id="guO-b4-5rl"/>
+                                    <constraint firstItem="Nx8-BK-xS1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wbk-q8-ENn" secondAttribute="trailing" symbolic="YES" id="kGi-rh-Pez"/>
+                                    <constraint firstItem="mYq-4i-YJu" firstAttribute="leading" secondItem="rrO-M5-Ok2" secondAttribute="leading" constant="80" id="kPL-e2-b3v"/>
+                                    <constraint firstAttribute="trailing" secondItem="mwu-Vl-a1e" secondAttribute="trailing" constant="96" id="kr6-eP-Rd8"/>
                                     <constraint firstItem="u4T-eY-3aB" firstAttribute="top" secondItem="Wbk-q8-ENn" secondAttribute="bottom" constant="11" id="ldK-UF-uzf"/>
-                                    <constraint firstItem="u2B-Rp-U4c" firstAttribute="leading" secondItem="Qgr-mp-iI5" secondAttribute="trailing" constant="9" id="pgl-cp-2az"/>
+                                    <constraint firstItem="Qgr-mp-iI5" firstAttribute="leading" secondItem="rrO-M5-Ok2" secondAttribute="leading" constant="84.5" id="nHT-Xh-ggJ"/>
+                                    <constraint firstItem="u2B-Rp-U4c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qgr-mp-iI5" secondAttribute="trailing" symbolic="YES" id="pgl-cp-2az"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zso-tb-RI0" secondAttribute="trailing" constant="96" id="qgF-gy-RCO"/>
                                     <constraint firstItem="Jlq-Ah-lmx" firstAttribute="centerX" secondItem="rrO-M5-Ok2" secondAttribute="centerX" id="qlY-zl-LZd"/>
-                                    <constraint firstItem="5Mu-aB-9Jj" firstAttribute="leading" secondItem="Jlq-Ah-lmx" secondAttribute="trailing" constant="7" id="sbk-Na-QBJ"/>
+                                    <constraint firstItem="5Mu-aB-9Jj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jlq-Ah-lmx" secondAttribute="trailing" symbolic="YES" id="sbk-Na-QBJ"/>
                                     <constraint firstItem="zWf-i9-O3l" firstAttribute="top" secondItem="u2B-Rp-U4c" secondAttribute="bottom" constant="11" id="sdM-cC-ljl"/>
                                     <constraint firstItem="Wbk-q8-ENn" firstAttribute="top" secondItem="um5-XN-VwS" secondAttribute="bottom" constant="11" id="tlj-qp-WKw"/>
                                     <constraint firstItem="Zso-tb-RI0" firstAttribute="centerY" secondItem="8Pf-bV-iq9" secondAttribute="centerY" id="uUL-xM-R8X"/>
@@ -214,9 +232,10 @@
                                     <constraint firstItem="u2B-Rp-U4c" firstAttribute="top" secondItem="rrO-M5-Ok2" secondAttribute="top" constant="20" id="x2e-yH-1ej"/>
                                     <constraint firstItem="Jlq-Ah-lmx" firstAttribute="top" secondItem="8Pf-bV-iq9" secondAttribute="bottom" constant="11" id="x9f-5k-Lx3"/>
                                     <constraint firstItem="AQB-M0-EHO" firstAttribute="centerY" secondItem="u4T-eY-3aB" secondAttribute="centerY" id="xof-Nx-kCd"/>
-                                    <constraint firstItem="um5-XN-VwS" firstAttribute="leading" secondItem="aHc-FU-qOi" secondAttribute="trailing" constant="9" id="y7Y-0t-zHr"/>
+                                    <constraint firstItem="um5-XN-VwS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aHc-FU-qOi" secondAttribute="trailing" symbolic="YES" id="y7Y-0t-zHr"/>
                                     <constraint firstItem="um5-XN-VwS" firstAttribute="centerX" secondItem="rrO-M5-Ok2" secondAttribute="centerX" id="ymk-Mr-53f"/>
-                                    <constraint firstItem="vzc-Io-25h" firstAttribute="leading" secondItem="u4T-eY-3aB" secondAttribute="trailing" constant="7" id="zYG-7L-ZIF"/>
+                                    <constraint firstItem="vzc-Io-25h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u4T-eY-3aB" secondAttribute="trailing" symbolic="YES" id="zYG-7L-ZIF"/>
+                                    <constraint firstItem="8Ag-FM-zeU" firstAttribute="leading" secondItem="rrO-M5-Ok2" secondAttribute="leading" constant="112" id="zjk-qg-krb"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-rN-3V8">
@@ -245,6 +264,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="eTL-7b-CjK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zbM-rN-3V8" secondAttribute="leading" constant="20" symbolic="YES" id="8hM-TE-cVU"/>
                                     <constraint firstItem="39F-Wg-tNQ" firstAttribute="centerY" secondItem="zbM-rN-3V8" secondAttribute="centerY" id="Bbf-F4-rPr"/>
                                     <constraint firstItem="39F-Wg-tNQ" firstAttribute="centerX" secondItem="zbM-rN-3V8" secondAttribute="centerX" id="N5D-BR-nAc"/>
                                     <constraint firstItem="cEz-GH-jqL" firstAttribute="top" secondItem="zbM-rN-3V8" secondAttribute="top" constant="28" id="T9Y-98-GhZ"/>
