@@ -15,5 +15,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pulsator/Pulsator.swift'
 
-  s.frameworks = 'UIKit', 'QuartzCore'
+  s.ios.frameworks = 'UIKit', 'QuartzCore'
+  s.osx.frameworks = 'Cocoa', 'QuartzCore'
+
 end
