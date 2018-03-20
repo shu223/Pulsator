@@ -7,8 +7,21 @@
 //
 //  Objective-C version: https://github.com/shu223/PulsingHalo
 
-
+#if os(iOS)
 import UIKit
+public typealias Color = UIColor
+    
+internal let screenScale = UIScreen.main.scale
+internal let applicationWillBecomeActiveNotfication = NSNotification.Name.UIApplicationWillEnterForeground
+internal let applicationDidResignActive = NSNotification.Name.UIApplicationDidEnterBackground
+#elseif os(OSX)
+import Cocoa
+public typealias Color = NSColor
+    
+internal let screenScale = NSScreen.main?.backingScaleFactor ?? 0.0
+internal let applicationWillBecomeActiveNotfication = NSApplication.willBecomeActiveNotification
+internal let applicationDidResignActive = NSApplication.didResignActiveNotification
+#endif
 import QuartzCore
 
 internal let kPulsatorAnimationKey = "pulsator"
@@ -119,17 +132,18 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         
         instanceDelay = 1
         repeatCount = MAXFLOAT
-        backgroundColor = UIColor(
-            red: 0, green: 0.455, blue: 0.756, alpha: 0.45).cgColor
+        backgroundColor = Color(red: 0, green: 0.455, blue: 0.756, alpha: 0.45).cgColor
+        
+        
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(save),
-                                               name: NSNotification.Name.UIApplicationDidEnterBackground,
+                                               name: applicationDidResignActive,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(resume),
-                                               name: NSNotification.Name.UIApplicationWillEnterForeground,
+                                               name: applicationWillBecomeActiveNotfication,
                                                object: nil)
     }
     
@@ -148,7 +162,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     // MARK: - Private Methods
     
     fileprivate func setupPulse() {
-        pulse.contentsScale = UIScreen.main.scale
+        pulse.contentsScale = screenScale
         pulse.opacity = 0
         addSublayer(pulse)
         updatePulse()
