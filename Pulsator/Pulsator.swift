@@ -13,14 +13,14 @@ public typealias Color = UIColor
     
 internal let screenScale = UIScreen.main.scale
 internal let applicationWillBecomeActiveNotfication = NSNotification.Name.UIApplicationWillEnterForeground
-internal let applicationDidResignActive = NSNotification.Name.UIApplicationDidEnterBackground
+internal let applicationDidResignActiveNotification = NSNotification.Name.UIApplicationDidEnterBackground
 #elseif os(macOS)
 import Cocoa
 public typealias Color = NSColor
     
 internal let screenScale = NSScreen.main?.backingScaleFactor ?? 0.0
 internal let applicationWillBecomeActiveNotfication = NSApplication.willBecomeActiveNotification
-internal let applicationDidResignActive = NSApplication.didResignActiveNotification
+internal let applicationDidResignActiveNotification = NSApplication.didResignActiveNotification
 #endif
 import QuartzCore
 
@@ -138,7 +138,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(save),
-                                               name: applicationDidResignActive,
+                                               name: applicationDidResignActiveNotification,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
