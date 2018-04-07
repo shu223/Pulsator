@@ -104,7 +104,26 @@ You can try to change the `radius`,  `backgroundColor`  or other properties with
 <iframe src="https://appetize.io/embed/45kwjngp1xud45eeqhxqy8qqew?device=iphone6s&scale=75&autoplay=false&orientation=portrait&deviceColor=black" width="312px" height="653px" frameborder="0" scrolling="no"></iframe>
 
 
+## macOS support
 
+Add into your Podfile, then run `pod install`.
+
+```:Podfile
+platform :osx, '10.9'
+
+target 'Pulsator' do
+  use_frameworks!
+  pod "Pulsator"
+end
+```
+
+The usage is same as iOS.
+
+```swift
+let pulsator = Pulsator()
+view.layer?.addSublayer(pulsator)
+pulsator.start()
+```
 
 ## Objective-C version
 
