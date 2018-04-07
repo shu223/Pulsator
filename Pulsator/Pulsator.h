@@ -6,7 +6,7 @@
 //  Copyright © 2016 Shuichi Tsutsumi. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Pulsator.
 FOUNDATION_EXPORT double PulsatorVersionNumber;

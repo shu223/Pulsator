@@ -9,10 +9,13 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/shu223/Pulsator.git", :tag => "0.4.1" }
   s.social_media_url = 'https://twitter.com/shu223'
 
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
   s.requires_arc = true
 
   s.source_files = 'Pulsator/Pulsator.swift'
 
-  s.frameworks = 'UIKit', 'QuartzCore'
+  s.ios.frameworks = 'UIKit', 'QuartzCore'
+  s.osx.frameworks = 'Cocoa', 'QuartzCore'
+
 end
