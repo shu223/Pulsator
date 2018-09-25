@@ -12,8 +12,8 @@ import UIKit
 public typealias Color = UIColor
     
 internal let screenScale = UIScreen.main.scale
-internal let applicationWillBecomeActiveNotfication = NSNotification.Name.UIApplicationWillEnterForeground
-internal let applicationDidResignActiveNotification = NSNotification.Name.UIApplicationDidEnterBackground
+internal let applicationWillBecomeActiveNotfication = UIApplication.willEnterForegroundNotification
+internal let applicationDidResignActiveNotification = UIApplication.didEnterBackgroundNotification
 #elseif os(macOS)
 import Cocoa
 public typealias Color = NSColor
@@ -105,7 +105,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     @objc open var pulseInterval: TimeInterval = 0
     
     /// A function describing a timing curve of the animation.
-    @objc open var timingFunction: CAMediaTimingFunction? = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault) {
+    @objc open var timingFunction: CAMediaTimingFunction? = CAMediaTimingFunction(name: .default) {
         didSet {
             if let animationGroup = animationGroup {
                 animationGroup.timingFunction = timingFunction
