@@ -112,7 +112,7 @@
 					8A47DCA61CB9226400B6CD47 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 9Z86A4AWDE;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -297,8 +297,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = PulsatorDemo;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -312,8 +311,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = PulsatorDemo;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

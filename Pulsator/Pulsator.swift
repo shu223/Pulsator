@@ -216,7 +216,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     
     @objc internal func save() {
         prevSuperlayer = superlayer
-        prevLayerIndex = prevSuperlayer?.sublayers?.index(where: {$0 === self})
+        prevLayerIndex = prevSuperlayer?.sublayers?.firstIndex(where: {$0 === self})
     }
 
     @objc internal func resume() {
