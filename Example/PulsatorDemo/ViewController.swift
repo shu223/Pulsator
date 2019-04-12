@@ -33,7 +33,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        pulsator.borderWidth = 5
+        pulsator.borderColor = UIColor.red.cgColor
         sourceView.layer.superlayer?.insertSublayer(pulsator, below: sourceView.layer)
         setupInitialValues()
         pulsator.start()
