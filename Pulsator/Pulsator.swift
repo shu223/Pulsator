@@ -2,8 +2,8 @@
 //  Pulsator.swift
 //  Tasks
 //
-//  Created by Roco Tech LLC on 17/08/2018.
-//  Copyright © 2018 Roco Tech LLC. All rights reserved.
+//  Created by Shuichi Tsutsumi on 4/9/16.
+//  Copyright © 2016 Shuichi Tsutsumi. All rights reserved.
 //
 
 #if os(iOS)
