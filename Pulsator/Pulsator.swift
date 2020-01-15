@@ -53,7 +53,8 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     }
     
     // MARK: - Public Properties
-
+    @objc open var animationCompletionBlock:(()->Void)?
+    
     /// The number of pulse.
     @objc open var numPulse: Int = 1 {
         didSet {
@@ -153,6 +154,12 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    open override func removeFromSuperlayer() {
+        super.removeFromSuperlayer()
+        stop()
+        NotificationCenter.default.removeObserver(self)
     }
     
     deinit {
@@ -260,5 +267,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         if autoRemove {
             removeFromSuperlayer()
         }
+        
+        animationCompletionBlock?()
     }
 }
