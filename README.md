@@ -13,8 +13,10 @@ Pulse animation for iOS written with Swift.
                     
 Great For:
 
-- **Pulses of Bluetooth, BTLE, beacons (iBeacon)**, etc.
+- **Pulses of Bluetooth, BLE, beacons (iBeacon)**, etc.
 - Map Annotations
+
+<a href="https://tracking.gitads.io/?repo=Pulsator"><img src="https://images.gitads.io/Pulsator" alt="GitAds"/></a>
 
 ## Installation
 
