@@ -16,8 +16,6 @@ Great For:
 - **Pulses of Bluetooth, BLE, beacons (iBeacon)**, etc.
 - Map Annotations
 
-<a href="https://tracking.gitads.io/?repo=Pulsator"><img src="https://images.gitads.io/Pulsator" alt="GitAds"/></a>
-
 ## Installation
 
 ### CocoaPods
