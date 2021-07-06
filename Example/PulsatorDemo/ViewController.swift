@@ -10,6 +10,7 @@ import UIKit
 
 let kMaxRadius: CGFloat = 200
 let kMaxDuration: TimeInterval = 10
+let kMaxDelay: TimeInterval = 5
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var countSlider: UISlider!
     @IBOutlet weak var radiusSlider: UISlider!
     @IBOutlet weak var durationSlider: UISlider!
+    @IBOutlet weak var delaySlider: UISlider!
     @IBOutlet weak var rSlider: UISlider!
     @IBOutlet weak var gSlider: UISlider!
     @IBOutlet weak var bSlider: UISlider!
@@ -24,6 +26,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var radiusLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var delayLabel: UILabel!
     @IBOutlet weak var rLabel: UILabel!
     @IBOutlet weak var gLabel: UILabel!
     @IBOutlet weak var bLabel: UILabel!
@@ -59,6 +62,9 @@ class ViewController: UIViewController {
         durationSlider.value = 0.5
         durationChanged(sender: nil)
         
+        delaySlider.value = 0.0
+        delayChanged(delaySlider)
+        
         rSlider.value = 0
         gSlider.value = 0.455
         bSlider.value = 0.756
@@ -82,6 +88,11 @@ class ViewController: UIViewController {
     @IBAction func durationChanged(sender: UISlider?) {
         pulsator.animationDuration = Double(durationSlider.value) * kMaxDuration
         durationLabel.text = String(format: "%.1f", pulsator.animationDuration)
+    }
+    
+    @IBAction func delayChanged(_ sender: UISlider) {
+        pulsator.delay = Double(delaySlider.value) * kMaxDuration
+        delayLabel.text = String(format: "%.1f", pulsator.delay)
     }
     
     @IBAction func colorChanged(sender: UISlider?) {
