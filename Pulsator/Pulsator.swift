@@ -121,7 +121,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     }
     
     /// The inital delay before animation starts
-    @objc open var delay: TimeInterval = 5
+    @objc open var delay: TimeInterval = 0
     
     /// private properties for resuming
     fileprivate weak var prevSuperlayer: CALayer?
