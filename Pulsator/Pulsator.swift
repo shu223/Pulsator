@@ -120,6 +120,9 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         return keys.count > 0
     }
     
+    /// The inital delay before animation starts
+    @objc open var delay: TimeInterval = 0
+    
     /// private properties for resuming
     fileprivate weak var prevSuperlayer: CALayer?
     fileprivate var prevLayerIndex: Int?
@@ -236,7 +239,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         let isAnimating = pulse.animation(forKey: kPulsatorAnimationKey) != nil
         // if the animationGroup is not nil, it means the animation was not stopped
         if let animationGroup = animationGroup, !isAnimating {
-            pulse.add(animationGroup, forKey: kPulsatorAnimationKey)
+            addPulseAnimation(animationGroup, forKey: kPulsatorAnimationKey)
         }
     }
     
@@ -246,7 +249,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     @objc open func start() {
         setupPulse()
         setupAnimationGroup()
-        pulse.add(animationGroup, forKey: kPulsatorAnimationKey)
+        addPulseAnimation(animationGroup, forKey: kPulsatorAnimationKey)
     }
     
     /// Stop the animation.
@@ -269,5 +272,21 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         }
         
         animationCompletionBlock?()
+    }
+    
+    private var counterCheck = 0
+    private func addPulseAnimation(_ animation:CAAnimation, forKey key:String?){
+        if delay <= 0 {
+            pulse.add(animation, forKey: key)
+        } else {
+            counterCheck += 1
+            let innerCounterCheck = counterCheck
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay){
+                if self.counterCheck == innerCounterCheck {
+                    self.pulse.add(animation, forKey: key)
+                }
+            }
+        }
+        
     }
 }
