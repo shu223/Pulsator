@@ -39,7 +39,8 @@ struct ContentView: View {
                 )
                 Image(systemName: "iphone")
                     .font(.system(size: 64))
-                    .foregroundStyle(.secondary)
+                    .symbolRenderingMode(.palette)
+                    .foregroundStyle(.secondary, .white)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
