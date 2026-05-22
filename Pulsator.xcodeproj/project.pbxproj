@@ -3,16 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8A51842120AE6B9A002169CA /* Pulsator_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A51841F20AE6B9A002169CA /* Pulsator_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A77DC211CBC4B4E00087690 /* Pulsator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A77DC201CBC4B4E00087690 /* Pulsator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A77DC281CBC4B4E00087690 /* Pulsator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A77DC1D1CBC4B4E00087690 /* Pulsator.framework */; };
 		8A77DC2D1CBC4B4E00087690 /* PulsatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77DC2C1CBC4B4E00087690 /* PulsatorTests.swift */; };
-		8A77DC391CBC4BD000087690 /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77DC381CBC4BD000087690 /* Pulsator.swift */; };
-		8A77DC3B1CBC4BD000087690 /* PulsatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77DC3A1CBC4BD000087690 /* PulsatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +29,25 @@
 		8A51841F20AE6B9A002169CA /* Pulsator_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pulsator_macOS.h; sourceTree = "<group>"; };
 		8A51842020AE6B9A002169CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A77DC1D1CBC4B4E00087690 /* Pulsator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pulsator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A77DC201CBC4B4E00087690 /* Pulsator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pulsator.h; sourceTree = "<group>"; };
-		8A77DC221CBC4B4E00087690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A77DC271CBC4B4E00087690 /* PulsatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulsatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A77DC2C1CBC4B4E00087690 /* PulsatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatorTests.swift; sourceTree = "<group>"; };
 		8A77DC2E1CBC4B4E00087690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A77DC381CBC4BD000087690 /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
-		8A77DC3A1CBC4BD000087690 /* PulsatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulsatorView.swift; sourceTree = "<group>"; };
 		8A77DC6C1CBCB67D00087690 /* Pulsator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pulsator.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8A21E20D2FC096F800D9AF53 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8A77DC1C1CBC4B4E00087690 /* Pulsator */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8A21E2072FC096E700D9AF53 /* Pulsator */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8A21E20D2FC096F800D9AF53 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Pulsator; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8A51841920AE6B9A002169CA /* Frameworks */ = {
@@ -89,8 +96,8 @@
 		8A77DC131CBC4B4E00087690 = {
 			isa = PBXGroup;
 			children = (
+				8A21E2072FC096E700D9AF53 /* Pulsator */,
 				8A77DC6C1CBCB67D00087690 /* Pulsator.playground */,
-				8A77DC1F1CBC4B4E00087690 /* Pulsator */,
 				8A77DC2B1CBC4B4E00087690 /* PulsatorTests */,
 				8A51841120AE652C002169CA /* PulsatorMac */,
 				8A51841E20AE6B9A002169CA /* Pulsator-macOS */,
@@ -108,16 +115,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A77DC1F1CBC4B4E00087690 /* Pulsator */ = {
-			isa = PBXGroup;
-			children = (
-				8A77DC381CBC4BD000087690 /* Pulsator.swift */,
-				8A77DC3A1CBC4BD000087690 /* PulsatorView.swift */,
-				8A77DC371CBC4BC300087690 /* Supporting Files */,
-			);
-			path = Pulsator;
-			sourceTree = "<group>";
-		};
 		8A77DC2B1CBC4B4E00087690 /* PulsatorTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,15 +122,6 @@
 				8A77DC2E1CBC4B4E00087690 /* Info.plist */,
 			);
 			path = PulsatorTests;
-			sourceTree = "<group>";
-		};
-		8A77DC371CBC4BC300087690 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8A77DC201CBC4B4E00087690 /* Pulsator.h */,
-				8A77DC221CBC4B4E00087690 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +139,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A77DC211CBC4B4E00087690 /* Pulsator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +175,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8A21E2072FC096E700D9AF53 /* Pulsator */,
 			);
 			name = Pulsator;
 			productName = Pulsator;
@@ -293,8 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A77DC391CBC4BD000087690 /* Pulsator.swift in Sources */,
-				8A77DC3B1CBC4BD000087690 /* PulsatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +325,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Pulsator-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -369,7 +361,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Pulsator-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -487,7 +483,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -509,10 +506,26 @@
 				INFOPLIST_FILE = Pulsator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]" = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,10 +550,26 @@
 				INFOPLIST_FILE = Pulsator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]" = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,7 +588,11 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PulsatorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.PulsatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -574,7 +607,11 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PulsatorTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.PulsatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

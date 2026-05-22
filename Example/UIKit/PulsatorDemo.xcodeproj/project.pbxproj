@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A77DC121CBC467000087690 /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77DC111CBC467000087690 /* Pulsator.swift */; };
 		8AD3F2F51F729BDB0036CC93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3F2EC1F729BDB0036CC93 /* AppDelegate.swift */; };
 		8AD3F2F61F729BDB0036CC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD3F2ED1F729BDB0036CC93 /* Assets.xcassets */; };
 		8AD3F2F71F729BDB0036CC93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD3F2EE1F729BDB0036CC93 /* LaunchScreen.storyboard */; };
@@ -18,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		8A47DCA71CB9226400B6CD47 /* PulsatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulsatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A77DC111CBC467000087690 /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
 		8AD3F2EC1F729BDB0036CC93 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AD3F2ED1F729BDB0036CC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AD3F2EF1F729BDB0036CC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -27,6 +25,20 @@
 		8AD3F2F31F729BDB0036CC93 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8AD3F2F41F729BDB0036CC93 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8A21E1D12FC08F4400D9AF53 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8A47DCA61CB9226400B6CD47 /* PulsatorDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8A21E1CD2FC08F3B00D9AF53 /* Pulsator */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (8A21E1D12FC08F4400D9AF53 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); name = Pulsator; path = ../../Pulsator; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8A47DCA41CB9226400B6CD47 /* Frameworks */ = {
@@ -42,7 +54,7 @@
 		8A47DC9E1CB9226400B6CD47 = {
 			isa = PBXGroup;
 			children = (
-				8A77DC101CBC467000087690 /* Pulsator */,
+				8A21E1CD2FC08F3B00D9AF53 /* Pulsator */,
 				8AD3F2EB1F729BDB0036CC93 /* PulsatorDemo */,
 				8A47DCA81CB9226400B6CD47 /* Products */,
 			);
@@ -54,15 +66,6 @@
 				8A47DCA71CB9226400B6CD47 /* PulsatorDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8A77DC101CBC467000087690 /* Pulsator */ = {
-			isa = PBXGroup;
-			children = (
-				8A77DC111CBC467000087690 /* Pulsator.swift */,
-			);
-			name = Pulsator;
-			path = ../../Pulsator;
 			sourceTree = "<group>";
 		};
 		8AD3F2EB1F729BDB0036CC93 /* PulsatorDemo */ = {
@@ -93,6 +96,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8A21E1CD2FC08F3B00D9AF53 /* Pulsator */,
 			);
 			name = PulsatorDemo;
 			productName = Pulsator;
@@ -153,7 +159,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A77DC121CBC467000087690 /* Pulsator.swift in Sources */,
 				8AD3F2FA1F729BDB0036CC93 /* MapViewController.swift in Sources */,
 				8AD3F2FB1F729BDB0036CC93 /* ViewController.swift in Sources */,
 				8AD3F2F51F729BDB0036CC93 /* AppDelegate.swift in Sources */,
