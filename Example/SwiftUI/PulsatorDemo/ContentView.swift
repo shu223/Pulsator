@@ -29,20 +29,18 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            ZStack {
-                PulsatorView(
+            Image(systemName: "iphone")
+                .font(.system(size: 64))
+                .symbolRenderingMode(.palette)
+                .foregroundStyle(.secondary, .white)
+                .pulsator(
                     numPulse: Int(numPulse),
                     radius: radius,
                     animationDuration: duration,
                     color: pulseColor,
                     isPulsating: isPulsating
                 )
-                Image(systemName: "iphone")
-                    .font(.system(size: 64))
-                    .symbolRenderingMode(.palette)
-                    .foregroundStyle(.secondary, .white)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             controlPanel
                 .padding()

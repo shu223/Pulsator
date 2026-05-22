@@ -44,11 +44,18 @@ public struct PulsatorView {
     /// Whether the animation is running. Set to `false` to stop it.
     public var isPulsating: Bool
 
+    /// Default parameter values, shared by `PulsatorView.init` and the
+    /// `pulsator(...)` view modifier so the two stay in sync.
+    public static let defaultNumPulse = 1
+    public static let defaultRadius: CGFloat = 60
+    public static let defaultAnimationDuration: TimeInterval = 3
+    public static let defaultColor = SwiftUI.Color(red: 0, green: 0.455, blue: 0.756).opacity(0.45)
+
     public init(
-        numPulse: Int = 1,
-        radius: CGFloat = 60,
-        animationDuration: TimeInterval = 3,
-        color: SwiftUI.Color = SwiftUI.Color(red: 0, green: 0.455, blue: 0.756).opacity(0.45),
+        numPulse: Int = PulsatorView.defaultNumPulse,
+        radius: CGFloat = PulsatorView.defaultRadius,
+        animationDuration: TimeInterval = PulsatorView.defaultAnimationDuration,
+        color: SwiftUI.Color = PulsatorView.defaultColor,
         isPulsating: Bool = true
     ) {
         self.numPulse = numPulse
@@ -94,14 +101,18 @@ private func configure(
 @available(iOS 14.0, *)
 extension PulsatorView: UIViewRepresentable {
 
-    public func makeUIView(context: Context) -> PulsatorHostingView {
+    // Returns `UIView` (not `PulsatorHostingView`) so the hosting view can stay
+    // internal: a `public` representable method cannot expose an internal type.
+    public func makeUIView(context: Context) -> UIView {
         PulsatorHostingView()
     }
 
-    public func updateUIView(_ uiView: PulsatorHostingView, context: Context) {
-        uiView.isPulsating = isPulsating
+    public func updateUIView(_ uiView: UIView, context: Context) {
+        // `makeUIView` always returns a `PulsatorHostingView`.
+        let hostingView = uiView as! PulsatorHostingView
+        hostingView.isPulsating = isPulsating
         configure(
-            uiView.pulsator,
+            hostingView.pulsator,
             numPulse: numPulse,
             radius: radius,
             animationDuration: animationDuration,
@@ -113,12 +124,12 @@ extension PulsatorView: UIViewRepresentable {
 
 /// A backing `UIView` that hosts a `Pulsator` and keeps it centered.
 @available(iOS 14.0, *)
-public final class PulsatorHostingView: UIView {
+final class PulsatorHostingView: UIView {
 
     let pulsator = Pulsator()
     fileprivate var isPulsating = true
 
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .clear
         layer.addSublayer(pulsator)
@@ -129,12 +140,12 @@ public final class PulsatorHostingView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func layoutSubviews() {
+    override func layoutSubviews() {
         super.layoutSubviews()
         pulsator.position = CGPoint(x: bounds.midX, y: bounds.midY)
     }
 
-    public override func didMoveToWindow() {
+    override func didMoveToWindow() {
         super.didMoveToWindow()
         // Core Animation removes a layer's animations while it is off-screen
         // (e.g. while another screen is pushed over this one in a
@@ -153,14 +164,18 @@ public final class PulsatorHostingView: UIView {
 @available(macOS 11.0, *)
 extension PulsatorView: NSViewRepresentable {
 
-    public func makeNSView(context: Context) -> PulsatorHostingView {
+    // Returns `NSView` (not `PulsatorHostingView`) so the hosting view can stay
+    // internal: a `public` representable method cannot expose an internal type.
+    public func makeNSView(context: Context) -> NSView {
         PulsatorHostingView()
     }
 
-    public func updateNSView(_ nsView: PulsatorHostingView, context: Context) {
-        nsView.isPulsating = isPulsating
+    public func updateNSView(_ nsView: NSView, context: Context) {
+        // `makeNSView` always returns a `PulsatorHostingView`.
+        let hostingView = nsView as! PulsatorHostingView
+        hostingView.isPulsating = isPulsating
         configure(
-            nsView.pulsator,
+            hostingView.pulsator,
             numPulse: numPulse,
             radius: radius,
             animationDuration: animationDuration,
@@ -171,12 +186,12 @@ extension PulsatorView: NSViewRepresentable {
 }
 
 @available(macOS 11.0, *)
-public final class PulsatorHostingView: NSView {
+final class PulsatorHostingView: NSView {
 
     let pulsator = Pulsator()
     fileprivate var isPulsating = true
 
-    public override init(frame frameRect: NSRect) {
+    override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         wantsLayer = true
         layer?.addSublayer(pulsator)
@@ -187,12 +202,12 @@ public final class PulsatorHostingView: NSView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func layout() {
+    override func layout() {
         super.layout()
         pulsator.position = CGPoint(x: bounds.midX, y: bounds.midY)
     }
 
-    public override func viewDidMoveToWindow() {
+    override func viewDidMoveToWindow() {
         super.viewDidMoveToWindow()
         // Core Animation removes a layer's animations while it is off-screen.
         // `updateNSView` is not guaranteed to run on return, so resume here

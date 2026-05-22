@@ -23,25 +23,20 @@ struct MapDemoView: View {
                 span: MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5)
             )
         )) {
-            // `anchor: .center` aligns the frame's center with the coordinate.
-            // The pulse expands beyond its frame, so the frame is sized to the
-            // pulse diameter and left unclipped.
+            // `anchor: .center` aligns the annotation's center with the
+            // coordinate. The `.pulsator` modifier renders the pulse behind the
+            // center dot, expanding beyond it without clipping.
             Annotation("TITLE", coordinate: coordinate, anchor: .center) {
-                ZStack {
-                    PulsatorView(
+                // A small dot marking the halo's center.
+                Circle()
+                    .fill(SwiftUI.Color(red: 0, green: 0.455, blue: 0.756))
+                    .frame(width: 12, height: 12)
+                    .pulsator(
                         numPulse: 5,
                         radius: haloRadius,
                         animationDuration: 3,
-                        color: SwiftUI.Color(red: 0, green: 0.455, blue: 0.756),
-                        isPulsating: true
+                        color: SwiftUI.Color(red: 0, green: 0.455, blue: 0.756)
                     )
-                    .frame(width: haloRadius * 2, height: haloRadius * 2)
-
-                    // A small dot marking the halo's center.
-                    Circle()
-                        .fill(SwiftUI.Color(red: 0, green: 0.455, blue: 0.756))
-                        .frame(width: 12, height: 12)
-                }
             }
         }
         .navigationTitle("Map")
