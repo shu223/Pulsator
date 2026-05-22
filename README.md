@@ -1,15 +1,14 @@
 Pulsator
 ===========
 
-[![Badge w/ Version](http://cocoapod-badges.herokuapp.com/v/Pulsator/badge.png)](http://cocoadocs.org/docsets/Pulsator)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
-)](http://mit-license.org)
-[![Twitter](https://img.shields.io/badge/twitter-@shu223-blue.svg?style=flat)](http://twitter.com/shu223)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
+[![X (formerly Twitter)](https://img.shields.io/badge/X%20(formerly%20Twitter)-@shu223-black.svg?style=flat)](https://x.com/shu223)
 
-Pulse animation for iOS written with Swift.
+Pulse animation for iOS and macOS, usable from both UIKit and SwiftUI.
 
-![](demo.gif)
+<p align="center">
+  <img src="demo.gif" alt="Pulsator demo" />
+</p>
                     
 Great For:
 
@@ -17,6 +16,20 @@ Great For:
 - Map Annotations
 
 ## Installation
+
+### Swift Package Manager
+
+In Xcode, choose **File → Add Package Dependencies…** and enter the repository URL:
+
+```
+https://github.com/shu223/Pulsator
+```
+
+Or add it to the `dependencies` of your `Package.swift`:
+
+```swift
+.package(url: "https://github.com/shu223/Pulsator.git", from: "0.7.0")
+```
 
 ### CocoaPods
 
@@ -28,18 +41,10 @@ pod "Pulsator"
 
 Then `$ pod install`
 
-### Carthage
-
-Add into your Cartfile.
-
-```:Cartfile
-github "shu223/Pulsator"
-```
-
-Then `$ carthage update`
-
 
 ## How to use
+
+### UIKit
 
 Just **3 lines**!
 
@@ -49,6 +54,22 @@ Initiate and add to your view's layer, then call `start`!
 let pulsator = Pulsator()
 view.layer.addSublayer(pulsator)
 pulsator.start()
+```
+
+### SwiftUI
+
+Use `PulsatorView`. Give it a frame large enough for the pulse, since the pulse expands beyond the view's own bounds.
+
+```swift
+import SwiftUI
+import Pulsator
+
+struct ContentView: View {
+    var body: some View {
+        PulsatorView()
+            .frame(width: 160, height: 160)
+    }
+}
 ```
 
 
@@ -97,11 +118,10 @@ Use `repeatCount` property.
 
 ## Demo
 
-You can try to change the `radius`,  `backgroundColor`  or other properties with the demo app.
+Try changing the `radius`, `backgroundColor` or other properties with the demo apps.
 
-- Example/PulsatorDemo.xcodeproj
-
-<iframe src="https://appetize.io/embed/45kwjngp1xud45eeqhxqy8qqew?device=iphone6s&scale=75&autoplay=false&orientation=portrait&deviceColor=black" width="312px" height="653px" frameborder="0" scrolling="no"></iframe>
+- UIKit: `Example/UIKit/PulsatorDemo.xcodeproj`
+- SwiftUI: `Example/SwiftUI/PulsatorDemo.xcodeproj`
 
 
 ## macOS support
@@ -152,5 +172,5 @@ iOS freelancer in Japan. Welcome works from abroad!
 - PROFILES: [LinkedIn](https://www.linkedin.com/in/shuichi-tsutsumi-525b755b/)
 - BLOG: [English](https://medium.com/@shu223/) / [Japanese](http://d.hatena.ne.jp/shu223/)
 - CONTACTS:
-  - [Twitter](https://twitter.com/shu223)
+  - [X](https://x.com/shu223)
   - [Facebook](https://www.facebook.com/shuichi.tsutsumi)
