@@ -99,6 +99,7 @@ extension PulsatorView: UIViewRepresentable {
     }
 
     public func updateUIView(_ uiView: PulsatorHostingView, context: Context) {
+        uiView.isPulsating = isPulsating
         configure(
             uiView.pulsator,
             numPulse: numPulse,
@@ -115,6 +116,7 @@ extension PulsatorView: UIViewRepresentable {
 public final class PulsatorHostingView: UIView {
 
     let pulsator = Pulsator()
+    fileprivate var isPulsating = true
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -131,6 +133,17 @@ public final class PulsatorHostingView: UIView {
         super.layoutSubviews()
         pulsator.position = CGPoint(x: bounds.midX, y: bounds.midY)
     }
+
+    public override func didMoveToWindow() {
+        super.didMoveToWindow()
+        // Core Animation removes a layer's animations while it is off-screen
+        // (e.g. while another screen is pushed over this one in a
+        // NavigationStack). `updateUIView` is not guaranteed to run on return,
+        // so resume here when the view is re-attached to a window.
+        if window != nil, isPulsating, !pulsator.isPulsating {
+            pulsator.start()
+        }
+    }
 }
 #endif
 
@@ -145,6 +158,7 @@ extension PulsatorView: NSViewRepresentable {
     }
 
     public func updateNSView(_ nsView: PulsatorHostingView, context: Context) {
+        nsView.isPulsating = isPulsating
         configure(
             nsView.pulsator,
             numPulse: numPulse,
@@ -156,11 +170,11 @@ extension PulsatorView: NSViewRepresentable {
     }
 }
 
-/// A backing `NSView` that hosts a `Pulsator` and keeps it centered.
 @available(macOS 11.0, *)
 public final class PulsatorHostingView: NSView {
 
     let pulsator = Pulsator()
+    fileprivate var isPulsating = true
 
     public override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
@@ -177,5 +191,16 @@ public final class PulsatorHostingView: NSView {
         super.layout()
         pulsator.position = CGPoint(x: bounds.midX, y: bounds.midY)
     }
+
+    public override func viewDidMoveToWindow() {
+        super.viewDidMoveToWindow()
+        // Core Animation removes a layer's animations while it is off-screen.
+        // `updateNSView` is not guaranteed to run on return, so resume here
+        // when the view is re-attached to a window.
+        if window != nil, isPulsating, !pulsator.isPulsating {
+            pulsator.start()
+        }
+    }
 }
 #endif
+
