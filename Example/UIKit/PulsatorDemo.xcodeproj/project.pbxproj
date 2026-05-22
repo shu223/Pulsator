@@ -62,7 +62,7 @@
 				8A77DC111CBC467000087690 /* Pulsator.swift */,
 			);
 			name = Pulsator;
-			path = ../Pulsator;
+			path = ../../Pulsator;
 			sourceTree = "<group>";
 		};
 		8AD3F2EB1F729BDB0036CC93 /* PulsatorDemo */ = {
