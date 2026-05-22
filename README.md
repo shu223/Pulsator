@@ -7,7 +7,7 @@ Pulsator
 Pulse animation for iOS and macOS, usable from both UIKit and SwiftUI.
 
 <p align="center">
-  <img src="demo.gif" alt="Pulsator demo" />
+  <img src="demo.gif" width="300" alt="Pulsator demo" />
 </p>
                     
 Great For:
