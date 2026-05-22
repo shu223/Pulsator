@@ -295,7 +295,7 @@
 				INFOPLIST_FILE = PulsatorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu223.PulsatorDemo.UIKit;
 				PRODUCT_NAME = PulsatorDemo;
 				SWIFT_VERSION = 5.0;
 			};
@@ -309,7 +309,7 @@
 				INFOPLIST_FILE = PulsatorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Shuichi-Tsutsumi.Pulsator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shu223.PulsatorDemo.UIKit;
 				PRODUCT_NAME = PulsatorDemo;
 				SWIFT_VERSION = 5.0;
 			};
