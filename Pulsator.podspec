@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Pulsator"
-  s.version          = "0.6.0"
+  s.version          = "0.7.0"
   s.summary          = "Pulse animation for iOS."
   s.homepage         = "https://github.com/shu223/Pulsator"
   s.screenshots      = "https://github.com/shu223/Pulsator/blob/master/demo.gif?raw=true"
