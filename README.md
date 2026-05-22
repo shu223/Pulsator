@@ -1,7 +1,7 @@
 Pulsator
 ===========
 
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
 [![X (formerly Twitter)](https://img.shields.io/badge/X%20(formerly%20Twitter)-@shu223-black.svg?style=flat)](https://x.com/shu223)
 
 Pulse animation for iOS and macOS, usable from both UIKit and SwiftUI.
@@ -19,19 +19,10 @@ Great For:
 
 ### Swift Package Manager
 
-In Xcode, choose **File → Add Package Dependencies…** and enter the repository URL:
+In Xcode, choose **File → Add Package Dependencies…** and enter [this repository's URL](https://github.com/shu223/Pulsator):
 
-```
-https://github.com/shu223/Pulsator
-```
-
-Or add it to the `dependencies` of your `Package.swift`:
-
-```swift
-.package(url: "https://github.com/shu223/Pulsator.git", from: "0.7.0")
-```
-
-### CocoaPods
+<details>
+<summary>CocoaPods (deprecated)</summary>
 
 Add into your Podfile.
 
@@ -41,12 +32,21 @@ pod "Pulsator"
 
 Then `$ pod install`
 
+</details>
+
 
 ## How to use
 
-### UIKit
+### SwiftUI
 
-Just **3 lines**!
+Just **1 line**! Add the `.pulsator()` modifier to any view.
+
+```swift
+yourView
+    .pulsator()
+```
+
+### UIKit
 
 Initiate and add to your view's layer, then call `start`!
 
@@ -56,24 +56,21 @@ view.layer.addSublayer(pulsator)
 pulsator.start()
 ```
 
-### SwiftUI
-
-Use `PulsatorView`. Give it a frame large enough for the pulse, since the pulse expands beyond the view's own bounds.
-
-```swift
-import SwiftUI
-import Pulsator
-
-struct ContentView: View {
-    var body: some View {
-        PulsatorView()
-            .frame(width: 160, height: 160)
-    }
-}
-```
-
 
 ## Customizations
+
+SwiftUI example:
+
+```swift
+yourView
+    .pulsator(
+        numPulse: 3,
+        radius: 240,
+        animationDuration: 5,
+        color: pulseColor,
+        isPulsating: isPulsating
+    )
+````
 
 ### Number of Pulses
 
@@ -120,8 +117,8 @@ Use `repeatCount` property.
 
 Try changing the `radius`, `backgroundColor` or other properties with the demo apps.
 
-- UIKit: `Example/UIKit/PulsatorDemo.xcodeproj`
 - SwiftUI: `Example/SwiftUI/PulsatorDemo.xcodeproj`
+- UIKit: `Example/UIKit/PulsatorDemo.xcodeproj`
 
 
 ## macOS support
