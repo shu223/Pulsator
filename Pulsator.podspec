@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.requires_arc = true
 
-  s.source_files = 'Pulsator/Pulsator.swift'
+  s.source_files = 'Pulsator/*.swift'
 
   s.ios.frameworks = 'UIKit', 'QuartzCore'
   s.osx.frameworks = 'Cocoa', 'QuartzCore'
