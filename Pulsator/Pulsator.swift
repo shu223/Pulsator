@@ -9,14 +9,20 @@
 
 #if os(iOS)
 import UIKit
-public typealias Color = UIColor
-    
+// Kept internal (not `public`): a public `Color` typealias collides with
+// `SwiftUI.Color` for clients that `import Pulsator` alongside SwiftUI, forcing
+// them to disambiguate every bare `Color`. It is only used internally (see the
+// default `backgroundColor` below); the SwiftUI API surface uses `SwiftUI.Color`.
+typealias Color = UIColor
+
 internal let screenScale = UIScreen.main.scale
 internal let applicationWillBecomeActiveNotfication = UIApplication.willEnterForegroundNotification
 internal let applicationDidResignActiveNotification = UIApplication.didEnterBackgroundNotification
 #elseif os(macOS)
 import Cocoa
-public typealias Color = NSColor
+// Internal for the same reason as the iOS branch above (avoid clashing with
+// `SwiftUI.Color`).
+typealias Color = NSColor
     
 internal let screenScale = NSScreen.main?.backingScaleFactor ?? 0.0
 internal let applicationWillBecomeActiveNotfication = NSApplication.willBecomeActiveNotification
